@@ -1,0 +1,13 @@
+/* http://www.kendraschaefer.com/2012/06/chinese-standard-web-fonts-the-ultimate-guide-to-css-font-family-declarations-for-web-design-in-simplified-chinese/ */
+
+.chinese {
+  font-size: 216px;
+  font-family: KaiTi, 楷体, STKaiti, 华文楷体;
+  text-align: center;
+}
+
+.english {
+  font-size: 144px;
+  font-family: Helvetica;
+  text-align: center;
+}
