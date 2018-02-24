@@ -1,5 +1,4 @@
 import React from 'react'
-import Card from './Card'
 import { Link } from 'react-router-dom'
 
 /* takes an array prop 'items' and returns a <ul> element 

@@ -1,12 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
-import { Navbar, Nav, NavItem } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import { Navbar, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap'
 
 /* Import Components */
 import Cards from './components/Cards'
-import Card from './components/Card'
+import Flashcard from './components/Flashcard'
 import About from './components/About'
 
 const cards = [
@@ -78,17 +77,13 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
     <Navbar>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <Link to='/'>CIS Flashcards</Link>
-        </Navbar.Brand>
-      </Navbar.Header>
+      <NavbarBrand href='/'>
+        CIS Flashcards
+      </NavbarBrand>
       <Nav>
-        <LinkContainer to='/about'>
-          <NavItem>
-            About
-          </NavItem>
-        </LinkContainer>
+        <NavItem>
+          <NavLink href='/about'>About</NavLink>
+        </NavItem>
       </Nav>
     </Navbar>
     <div className="container">
@@ -98,7 +93,7 @@ ReactDOM.render(
         path="/card/:id"
         render={ function (props) {
           const id = parseInt(props.match.params.id);
-          return <Card card={ cards[id] }
+          return <Flashcard card={ cards[id] }
         /> } }
       />
     </div>

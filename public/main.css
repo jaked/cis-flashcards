@@ -4,10 +4,12 @@
   font-size: 216px;
   font-family: KaiTi, 楷体, STKaiti, 华文楷体;
   text-align: center;
+  height: 350px;
 }
 
 .english {
   font-size: 144px;
   font-family: Helvetica;
   text-align: center;
+  height: 350px;
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Jumbotron } from 'react-bootstrap'
+import { Jumbotron } from 'reactstrap'
 import CardList from './CardList'
 
 /* the main page for the index route of this app */
