@@ -16,15 +16,17 @@
     "react-bootstrap": "^0.32.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "reactstrap": "^4.8.0"
+    "reactstrap": "^4.8.0",
+    "react-sound": "^1.1.0",
+    "react-player-controls": "^0.5.18"
   },
   "devDependencies": {
-    "webpack": "^3.5.5",
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.5.1",
     "babel-preset-react": "^6.24.1",
     "babel-register": "^6.24.1",
-    "babel-register-cli": "^4.0.0"
+    "babel-register-cli": "^4.0.0",
+    "webpack": "^3.11.0"
   },
   "engines": {
     "node": "8.x"

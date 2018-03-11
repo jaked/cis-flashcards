@@ -1,15 +1,73 @@
 /* http://www.kendraschaefer.com/2012/06/chinese-standard-web-fonts-the-ultimate-guide-to-css-font-family-declarations-for-web-design-in-simplified-chinese/ */
 
+* {
+  outline: none;
+  outline: 0;
+}
+
+.card {
+  height: 350px;
+}
+
 .chinese {
   font-size: 216px;
   font-family: KaiTi, 楷体, STKaiti, 华文楷体;
   text-align: center;
-  height: 350px;
 }
 
 .english {
   font-size: 144px;
   font-family: Helvetica;
   text-align: center;
-  height: 350px;
+}
+
+.PlayButton,
+.PauseButton {
+  margin-right: 10px;
+  padding: 8px;
+  background: #fefefe;
+  border: 2px solid #72D687;
+  border-radius: 100%;
+  outline: none;
+  outline: 0;
+}
+
+.PlayButton[disabled],
+.PauseButton[disabled] {
+  opacity: 0.5;
+}
+
+.PlayButton.isEnabled,
+.PauseButton.isEnabled {
+  cursor: pointer;
+}
+
+.PlayButton.isEnabled:hover,
+.PauseButton.isEnabled:hover {
+  border-color: #3ea454;
+}
+
+.PlayButton.isEnabled:hover .Icon-shape,
+.PauseButton.isEnabled:hover .Icon-shape {
+  fill: #3ea454;
+}
+
+.PlayButton.isEnabled:active,
+.PauseButton.isEnabled:active {
+  border-color: rgba(62, 164, 84, 0.5);
+}
+
+.PlayButton.isEnabled:active .Icon-shape,
+.PauseButton.isEnabled:active .Icon-shape {
+  fill: rgba(62, 164, 84, 0.5);
+}
+
+.Icon {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+
+.Icon-shape {
+  fill: #72D687;
 }
